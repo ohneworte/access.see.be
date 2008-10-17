@@ -1,0 +1,22 @@
+/* access.see.be - Accessibility-Library for Prototype, www.access-see-be.net, Version 0.5
+ * Copyright (C) 2008  diamonddogs web consulting gesmbh, www.diamonddogs.cc
+ *  
+ * This program is free software; you can redistribute it and/or
+ * modify it under the terms of the GNU General Public License
+ * as published by the Free Software Foundation; either version 2
+ * of the License, or (at your option) any later version.
+ * 
+ * This program is distributed in the hope that it will be useful,
+ * but WITHOUT ANY WARRANTY; without even the implied warranty of
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ * GNU General Public License for more details.
+ * 
+ * You should have received a copy of the GNU General Public License
+ * along with this program; if not, write to the Free Software
+ * Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
+ *  
+ * Component: ariaLibraryStyles.css
+ *
+ *--------------------------------------------------------------------------*/
+
+.invisible{display:none;}.ariaElementWrapper{display:block;}.radio,.checkbox{cursor:pointer;float:left;overflow:hidden;}.aria-checkbox-box,.aria-radio-box,.aria-treeitem-box{float:left;display:block;}.aria-checkbox-box span,.aria-radio-box span,.aria-treeitem-box span{display:block;position:absolute;}.aria-checkbox-box object,.aria-radio-box object,.aria-treeitem-box object{position:absolute;}.tabpanel{border:2px solid #ccc;}.tablist{background-color:transparent;}.tab{cursor:pointer;}.button{border:2px solid #ccc;cursor:pointer;}.aria-slider-Button-left,.aria-slider-Button-right{border:none;}.slider{display:block;cursor:pointer;}.aria-slider-Slider{float:left;display:block;}.aria-slider-Button-left,.aria-slider-Button-right{float:left;}.aria-slider-Overlay{position:absolute;background:none;z-index:10;cursor:pointer;background:url('../images/aria/spacer.gif');}.treeitem{display:block;float:left;}.treeitem.expanded-true,.treeitem.expanded-false{cursor:pointer;}.group span{display:block;}.group .group span{display:block;}.aria-treeitem-text{float:left;}.listbox{display:block;float:left;}.option{display:block;height:auto;cursor:pointer;}.aria-option-hide{position:absolute;top:0;left:-1000000px;}.aria-listbox-list{display:block;}.aria-listbox-list span{display:block;cursor:pointer;}.aria-options-wrapper{display:block;float:left;}.aria-listbox-options{float:left;}.listbox .aria-listbox-optgroup{display:none;}.aria-listbox-list .aria-listbox-optgroup{font-weight:bold;}.aria-listbox-list .aria-listbox-optgroup:hover{text-decoration:none;background:none;cursor:default;}.aria-listbox-button{display:block;float:left;float:left;color:#fff;cursor:pointer;background-color:#000;}

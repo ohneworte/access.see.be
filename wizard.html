@@ -1,0 +1,200 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!--
+	access.see.be - Accessibility-Library for Prototype, www.access-see-be.net, Version 0.5
+	Copyright (C) 2008  diamonddogs web consulting gesmbh, www.diamonddogs.cc
+	  
+	This program is free software; you can redistribute it and/or
+	modify it under the terms of the GNU General Public License
+	as published by the Free Software Foundation; either version 2
+	of the License, or (at your option) any later version.
+	
+	This program is distributed in the hope that it will be useful,
+	but WITHOUT ANY WARRANTY; without even the implied warranty of
+	MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+	GNU General Public License for more details.
+	
+	You should have received a copy of the GNU General Public License
+	along with this program; if not, write to the Free Software
+	Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
+	 
+	Component: wizard.html
+-->
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+	<head>
+		<title>WAI-ARIA-Library Wizard</title>				
+		<link type="text/css" rel="stylesheet" href="access_see_be/stylesheets/ariaDefaultStyles.css" media="screen" />
+		
+		<script>
+			ariaSettings = { 'viewInAllBrowsers':true };
+		</script>	
+		<script type="text/javascript" src="access_see_be/scripts/prototype.js"></script>	
+		<script type="text/javascript" src="access_see_be/scripts/aria.js"></script>
+	</head>
+	<body>
+		<h1>access.see.be Demo</h1>
+				
+		<div class="wizard">
+			<div class="topArea">
+				<span class="topLeft"></span>
+				<span class="top"></span>
+				<span class="topRight"></span>
+			</div>
+			
+			<div class="contentArea">
+				<div id="wizardContent">
+					<ol class="access-see-be aTablist demoTablist [buttons:true]" id="myTabs1">
+						<li class="demoTab [active:true]"><a href="#ariaCheckbox">Widget 1</a></li>
+						<li class="demoTab [disabled:true]"><a href="#ariaRadioButtons">Widget 2</a></li>
+						<li class="demoTab"><a href="#ariaListbox">Widget 3</a></li>
+						<li class="demoTab"><a href="#ariaSlider">Widget 4</a></li>
+						<li class="demoTab"><a href="#ariaTree">Widget 5</a></li>
+						<li class="demoTab"><a href="#info">Widget 6</a></li>
+					</ol>
+					
+					<div class="access-see-be aTabpanel demoTabpanel">
+						<h2 id="ariaCheckbox">Accessible Checkbox</h2>
+						<p>
+							This widget can use images ...
+						</p>
+						<input class="access-see-be aCheckbox demoCheckbox [format:gif]" id="myCheckbox1" type="checkbox" />
+						<label for="myCheckbox1">Image Checkbox</label>
+						<p>
+							... or can be enhanced through flash movies:
+						</p>
+						<input class="access-see-be aCheckbox demoCheckbox" id="myCheckbox2" type="checkbox" />
+						<label for="myCheckbox2">Flash Checkbox 1</label><br />
+						<input class="access-see-be aCheckbox demoCheckbox" id="myCheckbox3" type="checkbox" />
+						<label for="myCheckbox3">Flash Checkbox 2</label><br />
+					</div>
+					
+					<div class="access-see-be aTabpanel demoTabpanel">
+						<h2 id="ariaRadioButtons">Accessible Radio-Buttons</h2>
+						<p>
+							This widget can obtain the same parameters like an accessible checkbox.
+						</p>	
+						
+						<input class="access-see-be aRadio demoRadio" name="radios" type="radio" id="myRadio1" />
+						<label for="myRadio1">Flash Radio-Button 1</label><br />
+						<input class="access-see-be aRadio demoRadio" name="radios" type="radio" id="myRadio2" />
+						<label for="myRadio2">Flash Radio-Button 2</label><br />		
+						<input class="access-see-be aRadio demoRadio" name="radios" type="radio" id="myRadio3" />
+						<label for="myRadio3">Flash Radio-Button 3</label><br />
+						<input class="access-see-be aRadio demoRadio" name="radios" type="radio" id="myRadio4" />
+						<label for="myRadio4">Flash Radio-Button 4</label>
+					</div>
+					
+					<div class="access-see-be aTabpanel demoTabpanel">
+						<h2 id="ariaListbox">Accessible Listbox</h2>
+						<p>
+							Acts like a combobox, beside the possibility to type in text.
+						</p>
+						<select class="access-see-be aListbox demoListbox" id="myListbox1">
+							<option>Option 1</option>
+							<option>Option 2</option>
+							<option>Option 3</option>
+							<option>Option 4</option>
+						</select>
+						<br />
+						<p>
+							This widget can be enhanced through groups.
+						</p>
+						<select class="access-see-be aListbox demoListbox" id="myListbox2">
+							<optgroup label="Group 1">
+								<option>Option 4</option>
+								<option selected>Option 5</option>
+							</optgroup>
+							<optgroup label="Group 2">
+								<option>Option 6</option>
+							</optgroup>
+						</select>
+						<br />
+					</div>
+					
+					<div class="access-see-be aTabpanel demoTabpanel">
+						<h2 id="ariaSlider">Accessible Slider</h2>
+						<p>
+							A slider widget as known of many applications inside an operating system.
+						</p>						
+						<select class="access-see-be aSlider demoSlider [buttons:false,size:200]" id="mySlider1">
+							<option value="0" selected>0</option>
+							<option value="10">10</option>
+							<option value="20">20</option>
+							<option value="30">30</option>
+							<option value="40">40</option>
+							<option value="50">50</option>
+							<option value="60">60</option>
+							<option value="70">70</option>
+							<option value="80">80</option>
+							<option value="90">90</option>
+							<option value="100">100</option>
+						</select>
+						
+						<p>
+							This widget can be enhanced through buttons and customized through a given size, increment steps and preselected value.
+						</p>						
+						<select class="access-see-be aSlider demoSlider [buttons:true,size:300]" id="mySlider2">
+							<option value="0">0</option>
+							<option value="50">50</option>
+							<option value="100" selected>100</option>
+							<option value="150">150</option>
+							<option value="200">200</option>
+						</select>
+					</div>
+										
+					<div class="access-see-be aTabpanel demoTabpanel">
+						<h2 id="ariaTree">Accessible Tree</h2>
+						<p>
+							This widget brings a well-known tree-navigation mechanism to web applications.
+						</p>
+						
+						<table class="access-see-be aTree demoTree">		    
+							<tr class="access-see-be aTreeItem [children:3]">    	
+						    	<td>Item 1</td>
+						  	</tr>		  
+								<tr class="access-see-be aTreeItem">    	
+									<td>Item 1.1</td>
+								</tr>
+								<tr class="access-see-be aTreeItem [children:2]">    	
+								    <td>Item 1.2</td>
+								</tr>
+									<tr class="access-see-be aTreeItem">    	
+								    	<td>Item 1.2.1</td>
+								  	</tr>
+									<tr class="access-see-be aTreeItem">    	
+								    	<td>Item 1.2.2</td>
+								  	</tr>				
+								<tr class="access-see-be aTreeItem">    	
+								  	<td>Item 1.3</td>
+								</tr>
+							<tr class="access-see-be aTreeItem">    	
+						    	<td>Item 2</td>
+						  	</tr>
+							<tr class="access-see-be aTreeItem">    	
+						    	<td>Item 3</td>
+						  	</tr>
+						</table>
+					</div>
+										
+					<div class="access-see-be aTabpanel demoTabpanel">
+						<h2 id="info">Thanks for viewing this demo</h2>
+						<p>
+							Also note that beside the widgets demonstrated in the tabs, you further used more accessible components, like:
+							<ul>
+								<li>Accessible Tablist</li>
+								<li>Accessible Alert-Box (when you try to open disabled tabs)</li>
+								<li>Accessible Buttons</li>
+							</ul>
+							Read the documentation for further information and stay up to date on access.see.be!
+						</p>
+					</div>
+				</div>
+			</div>
+			
+			<div class="bottomArea">
+				<span class="bottomLeft"></span>
+				<span class="bottom"></span>
+				<span class="bottomRight"></span>
+			</div>
+		</div>		
+	</body>
+</html>
